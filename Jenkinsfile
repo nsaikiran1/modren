@@ -24,6 +24,12 @@ echo "Hello"'''
       }
     }
 
+    stage('') {
+      steps {
+        echo 'Hi all'
+      }
+    }
+
   }
   environment {
     saikiran = '1'
