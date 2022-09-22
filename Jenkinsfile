@@ -15,7 +15,7 @@ echo "Hello"'''
           }
         }
 
-        stage('') {
+        stage('new') {
           steps {
             echo 'hi'
           }
