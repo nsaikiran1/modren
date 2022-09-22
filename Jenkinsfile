@@ -1,10 +1,5 @@
 pipeline {
-  agent {
-    node {
-      label 'sai'
-    }
-
-  }
+  agent any
   stages {
     stage('Jenkins') {
       parallel {
@@ -24,14 +19,11 @@ echo "Hello"'''
       }
     }
 
-    stage('') {
+    stage('error') {
       steps {
         echo 'Hi all'
       }
     }
 
-  }
-  environment {
-    saikiran = '1'
   }
 }
