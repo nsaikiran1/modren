@@ -1,5 +1,10 @@
 pipeline {
-  agent any
+  agent {
+    node {
+      label 'sai'
+    }
+
+  }
   stages {
     stage('Jenkins') {
       steps {
@@ -8,5 +13,8 @@ echo "Hello"'''
       }
     }
 
+  }
+  environment {
+    saikiran = '1'
   }
 }
