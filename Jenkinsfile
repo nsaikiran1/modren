@@ -7,9 +7,20 @@ pipeline {
   }
   stages {
     stage('Jenkins') {
-      steps {
-        sh '''echo "Hai"
+      parallel {
+        stage('Jenkins') {
+          steps {
+            sh '''echo "Hai"
 echo "Hello"'''
+          }
+        }
+
+        stage('') {
+          steps {
+            echo 'hi'
+          }
+        }
+
       }
     }
 
